@@ -83,3 +83,4 @@ describe("Validar metodoTestar", () => {
 
 _____
 [Git Hub MD tips](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
+[Referência rápida](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
