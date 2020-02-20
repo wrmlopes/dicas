@@ -78,6 +78,21 @@ describe("Validar metodoTestar", () => {
     }
   });
   ```
+  
+  #### mock 'request'
+  ```javascript
+  //mock request
+let mockRequestOptions = undefined;
+let mockRequestError = { code: 'ETIMEDOUT', message: 'Erro do ETIMEDOUT' };
+let mockRequestResponse = {};
+
+jest.mock('request', () => {
+  const post = jest.fn((mockRequestOptions, cb) => {
+    cb(mockRequestError, mockRequestResponse)
+  });
+  return { post };
+});
+```
 
 
 
