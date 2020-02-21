@@ -94,6 +94,10 @@ jest.mock('request', () => {
 });
 ```
 
+## typescript
+
+### generators
+  + (Generators, yelds, iterators...)[https://braziljs.org/artigos/generators-yield-e-iterators/]
 
 
 _____
