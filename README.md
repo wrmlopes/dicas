@@ -103,3 +103,24 @@ jest.mock('request', () => {
 _____
 [Git Hub MD tips](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
 [Referência rápida](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code)
+
+
+## java
+
+### Response
+   + **GET** exemplo de uso:
+   ```java
+   Response response = client
+                    .target(urlString)
+                    .queryParam("parâmetro", valor_parâmetro)
+                    .path(path)
+                    .request(MediaType.APPLICATION_JSON_TYPE)
+                    .get();
+```
+   + **POST** exemplo de uso
+   ```java
+   Response response = client.target(baseUrl)
+                    .path(ENDPOINT_LOG_EXECUCAO_GRAVAR)
+                    .request(MediaType.APPLICATION_JSON)
+                    .post(Entity.entity(logExecucao, "application/json; charset=UTF-8"));
+```
